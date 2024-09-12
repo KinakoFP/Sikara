@@ -1,0 +1,62 @@
+/* Importation de la police d'écriture depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Prout';
+    src: url('./Coffee\ Soda.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+p#test{
+    font-family: 'Prout';
+}
+
+
+.div1 {
+    background-image: url('./img1.jpg'); 
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+
+}
+
+.div4 {
+    background-image: url('./img4.jpg'); 
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+
+}
+
+.div3 {
+    background-image: url('./img3.jpeg'); 
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.div2 {
+    background-image: url('./img2.jpg'); 
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+
+}
+
+
+/* Style du texte */
+.styled-text {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: left;
+    position: relative;
+}
