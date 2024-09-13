@@ -1,0 +1,27 @@
+.case {
+    width: 50px;
+    height: 50px;
+}
+
+.case1 {
+    margin: 20px 0;
+    border: 4px double blue;
+}
+
+.case2 {
+    margin: 50px 30px 40px;
+    padding: 20px;
+    border: 4px dashed red;
+}
+
+.case3 {
+    margin: 50px 40px;
+    padding: 5px 20px 30px;
+    border: 1px solid black;
+}
+
+.case4 {
+    margin: 0;
+    padding: 10px 20px;
+    border: 10px solid green;
+}
