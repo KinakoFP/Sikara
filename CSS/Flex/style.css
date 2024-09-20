@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+}
+
+header{
+    background-color: red;
+    text-align: center;
+}
+
+footer{
+    background-color: aquamarine;
+    text-align: center;
+}
+
+h1, h2{
+    padding: 20px;
+}
+
+.navbar {
+    background-color: red;
+}
+
+.nav-container {
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-links {
+    border: 1px solid black;
+    display: flex;
+    width: 100%;
+
+}
+
+.nav-link{
+    text-decoration: none;
+    border: 1px solid black; 
+    width: 100%;
+  
+}
+
+.flex-container{
+    display: flex;
+}
+
+.flexDiv{
+    display: flex;
+    width: 20%;
+    background-color: aqua;
+}
+
+#orange{
+    background-color: orange;
+}
+
+
