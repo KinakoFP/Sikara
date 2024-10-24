@@ -4,14 +4,6 @@ article {
     align-items: center;
 }
 
-#zzz{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-}
-
 .animated-cube {
     width: 100px;
     height: 100px;
