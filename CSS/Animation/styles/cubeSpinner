@@ -1,0 +1,40 @@
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#zzz{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.animated-cube {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: red;
+    animation-name: animationCube;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes animationCube {
+    0% {
+        background-color: red;
+        transform: rotate(0deg);
+    }
+    50% {
+        background-color: blue;
+        transform: rotate(360deg);
+    }
+    100% {
+        background-color: red;
+        transform: rotate(720deg);
+    }
+}
