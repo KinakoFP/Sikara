@@ -1,0 +1,87 @@
+.cube {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    animation: rotate 2s infinite linear, move 4s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes move {
+    0% {
+        top: 0%;
+        left: 0%;
+        background-color: red;
+    }
+    12.5% {
+        top: 0%;
+        left: 50%;
+        background-color: orange;
+    }
+    25% {
+        top: 0%;
+        left: 94%;
+        background-color: blue;
+    }
+    37.5% {
+        top: 50%;
+        left: 94%;
+        background-color: purple;
+    }
+    50% {
+        top: 92%;
+        left: 94%;
+        background-color: green;
+    }
+    62.5% {
+        top: 92%;
+        left: 50%;
+        background-color: yellow;
+    }
+    75% {
+        top: 92%;
+        left: 0%;
+        background-color: pink;
+    }
+    87.5% {
+        top: 50%;
+        left: 0%;
+        background-color: cyan;
+    }
+    100% {
+        top: 0%;
+        left: 0%;
+        background-color: red;
+    }
+}
+
+.cube1 {
+    animation-delay: 0s;
+}
+
+.cube2 {
+    animation-delay: 0.5s;
+}
+
+.cube3 {
+    animation-delay: 1s;
+}
+
+.cube4 {
+    animation-delay: 1.5s;
+}
