@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f0f8ff, #add8e6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    position: relative;
+    height: 80vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    background-color: #32cd32;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    animation: bounce 4s infinite ease-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ground {
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    position: absolute;
+    bottom: 0;
+}
+
+@keyframes bounce {
+    0% {
+        top: 0; 
+    }
+    12% {
+        top: 88%;
+    }
+    24% {
+        top: 25%; 
+    }
+    36% {
+        top: 88%; 
+    }
+    48% {
+        top: 40%;
+    }
+    60% {
+        top: 88%; 
+    }
+    72% {
+        top: 55%; 
+    }
+    84% {
+        top: 88%; 
+    }
+    96% {
+        top: 65%; 
+    }
+    100% {
+        top: 88%; 
+    }
+}
