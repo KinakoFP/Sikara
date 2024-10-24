@@ -1,0 +1,74 @@
+#explode{
+    top: 10%;
+    left: 25%;
+}
+
+.interactive-menu {
+    width: 250px;
+    background: #5d5c61;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.menu-button {
+    display: block;
+    background: #4b3d55;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.menu-button:hover {
+    background: #6d6a75;
+}
+
+.menu-content {
+    max-height: 0; 
+    opacity: 0; 
+    padding: 0 10px;
+    transform: translateY(-20px); 
+    transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease; 
+}
+
+input[type="checkbox"] {
+    display: none; 
+}
+
+input[type="checkbox"]:checked ~ .menu-content {
+    max-height: 500px; 
+    opacity: 1;
+    padding: 10px; 
+    transform: translateY(0); 
+}
+
+.menu-section {
+    background: #7d7f81;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.menu-section:hover {
+    background: #8f9c9e;
+}
+
+.section-title {
+    margin: 0;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.section-content {
+    display: none; 
+}
+
+.section-title:active + .section-content,
+.section-title:hover + .section-content {
+    display: block; 
+}
