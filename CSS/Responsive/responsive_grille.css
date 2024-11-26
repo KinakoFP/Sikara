@@ -64,61 +64,54 @@ body, h1, h2, p, nav, a {
   .articles h2 {
     font-size: 1.5rem;
     margin-bottom: 20px;
+    text-align: center;
   }
   
   /* Grille des articles */
   .row {
-    overflow: hidden; /* Clearfix */
+    text-align: center;
   }
   
   .col {
-    float: left;
-    width: 30%;
-    margin: 1.66%;
+    display: inline-block;
+    width: 30%; /* Largeur de chaque colonne */
+    margin: 10px 1%; /* Marges entre les blocs */
+    padding: 15px;
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
-    padding: 15px;
+    text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
-  .col:nth-child(3) {
-    clear: none;
-  }
-  
-  .col img {
-    display: block;
-    margin: 0 auto 15px;
-    max-width: 100%;
-  }
-  
-  .col p {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    color: #555;
+  /* Positionnement pour le dernier bloc */
+  .col.last {
+    display: inline-block;
+    margin: 20px auto 0; /* Centre le dernier bloc */
+    width: 25%; /* Le dernier bloc est plus large */
   }
   
   /* Responsiveness */
-  @media (max-width: 900px) {
+  @media (max-width: 700px) {
     .col {
-      width: 45%; 
+      width: 45%; /* Largeur réduite pour les colonnes */
     }
   
-    /* Dernière colonne centrée */
-    .col:nth-child(3) {
-      float: none;
-      width: 60%; /* Ajustez pour la centrer */
-      margin: 0 auto 20px; 
+    .col.last {
+      width: 50%;
     }
   }
   
   @media (max-width: 600px) {
     .col {
-      width: 100%; 
+      width: 95%; /* Les blocs prennent toute la largeur */
+      display: block;
+      margin: 10px auto;
     }
   
-    .col:nth-child(3) {
-      margin: 0 auto; /* Centré avec largeur 100% */
+    .col.last {
+      width: 95%;
+      margin-top: 20px;
     }
   }
   
