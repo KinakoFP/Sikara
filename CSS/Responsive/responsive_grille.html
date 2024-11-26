@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Disposition Triangulaire</title>
+  <title>Responsive</title>
   <link rel="stylesheet" href="./responsive_grille.css">
 </head>
 <body>
   <header>
+    <h1>Responsive</h1>
     <nav class="menu">
-      <a href="#">Accueil</a>
-      <a href="#">Articles</a>
-      <a href="#">Contact</a>
+      <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button> <!-- Bouton Hamburger -->
+      <div class="menu-links">
+        <a href="./responsive_web.html">PageWeb</a>
+        <a href="./responsive_meteo.html">Météo</a>
+        <a href="./responsive_grille.html">Grille</a>
+      </div>
     </nav>
-    <h1>Disposition Triangulaire</h1>
   </header>
-
+  
   <section class="intro">
-    <h2>Bienvenue sur mon super site perso</h2>
+    <h2>Bienvenue</h2>
     <p>
-      Ton père, il n'aime pas quand tu n'es pas occupé et a toujours été meilleur que toi de toute façon. 
-      Et Juno, il a fini la soirée devant TF1 !
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate quas inventore libero corporis est fuga atque enim asperiores eius. Fugit dolorum aspernatur hic tempore, atque quia cupiditate obcaecati ratione cumque.
     </p>
   </section>
 
@@ -32,5 +34,16 @@
       <article class="col last">Bloc 3</article>
     </div>
   </section>
+
+  <script>
+    // Sélectionner le bouton hamburger et le menu
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menuLinks = document.querySelector('.menu-links');
+
+    // Ajouter un écouteur d'événement pour le bouton hamburger
+    menuToggle.addEventListener('click', () => {
+      menuLinks.classList.toggle('active'); // Basculer la classe active
+    });
+  </script>
 </body>
 </html>
