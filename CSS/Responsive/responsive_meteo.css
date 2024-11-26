@@ -1,7 +1,74 @@
-body {
-    background: url("./meteoBg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #6fb1fc, #4364f7);
+    color: #fff;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.week-weather {
+    margin: 0 auto;
+    overflow: hidden; /* Contient les float */
+    max-width: 100%;
+    padding: 10px;
+}
+
+.weather-card {
+    width: 30%; /* Largeur par défaut */
+    margin: 1%;
+    float: left; /* Aligne les cartes horizontalement */
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block; /* Rendu correct sans flex */
+}
+
+.weather-card i {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.weather-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.weather-card p {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .weather-card {
+        width: 45%; /* Deux colonnes sur écran intermédiaire */
+    }
+}
+
+@media (max-width: 480px) {
+    .weather-card {
+        width: 90%; /* Une seule colonne sur mobile */
+        float: none; /* Supprime les float */
+        margin: 10px auto; /* Centre les cartes */
+    }
+}
