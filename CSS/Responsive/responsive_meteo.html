@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive</title>
     <link rel="stylesheet" href="./responsive_meteo.css">
+    <link rel="stylesheet" href="../menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Prévisions Météo</h1>
+    <header class="sticky-header">
+        <nav>
+            <ul>
+                <li><a href="./responsive_web.html">PageWeb</a></li>
+                <li><a href="./responsive_meteo.html">Météo</a></li>
+                <li><a href="">Grille</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
+        <h1>Prévisions Météo</h1>
         <div class="today-weather">
             <i class="fas fa-cloud-sun"></i>
             <div class="details">
