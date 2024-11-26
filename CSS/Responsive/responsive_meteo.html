@@ -1,22 +1,30 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prévisions Météo</title>
-    <link rel="stylesheet" href="responsive_meteo.css">
+    <title>Responsive</title>
+    <link rel="stylesheet" href="./responsive_meteo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header>
         <h1>Prévisions Météo</h1>
-        <h2>Metz</h2>
     </header>
-    <div class="weather-day">
-        <div class="weather-card">ourge</div>
-    </div>
     <main>
-        <div class="week-weather"></div>
+        <div class="today-weather">
+            <i class="fas fa-cloud-sun"></i>
+            <div class="details">
+                <h2>Metz</h2>
+                <p>Température : <span id="today-temp">18°C</span></p>
+                <p>Condition : <span id="today-condition">Partiellement Ensoleillé</span></p>
+                <p>Humidité : <span id="today-humidity">65%</span></p>
+                <p>Vent : <span id="today-wind">15 km/h</span></p>
+            </div>
+        </div>
+
+        <div class="week-weather">
+        </div>
     </main>
     <footer>
         <p>© 2024 Prévisions Météo</p>

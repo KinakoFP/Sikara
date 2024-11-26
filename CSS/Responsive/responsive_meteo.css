@@ -1,15 +1,24 @@
+/* Réinitialisation CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background: linear-gradient(135deg, #6fb1fc, #4364f7);
-    color: #fff;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    flex: 1; /* Remplit l'espace restant */
+}
+
+footer {
     text-align: center;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
 }
 
 header {
@@ -20,28 +29,55 @@ h1 {
     font-size: 2rem;
 }
 
-h2 {
-    font-size: 1.5rem;
+.today-weather {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 15px;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-align: left;
+    width: 83%;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.today-weather i {
+    font-size: 4rem;
+    float: left;
+    margin-right: 20px;
+}
+
+.today-weather .details {
+    text-align: left;
+}
+
+.today-weather h2 {
     margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.today-weather p {
+    margin: 5px 0;
 }
 
 .week-weather {
     margin: 0 auto;
-    overflow: hidden; /* Contient les float */
+    overflow: hidden; 
     max-width: 100%;
     padding: 10px;
 }
 
 .weather-card {
-    width: 30%; /* Largeur par défaut */
+    width: 12%; 
     margin: 1%;
-    float: left; /* Aligne les cartes horizontalement */
+    float: left; 
     background: rgba(255, 255, 255, 0.1);
     padding: 15px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: inline-block; /* Rendu correct sans flex */
+    display: inline-block; 
 }
 
 .weather-card i {
@@ -60,12 +96,17 @@ h2 {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .weather-card {
-        width: 45%; /* Deux colonnes sur écran intermédiaire */
+    .today-weather {
+        text-align: center;
+    }
+
+    .today-weather i {
+        float: none;
+        margin: 0 auto 10px;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .weather-card {
         width: 90%; /* Une seule colonne sur mobile */
         float: none; /* Supprime les float */
